@@ -11,6 +11,14 @@ theme.set_highlights = function (opts)
                  or c.NormalBG
     })
 
+    -- Meta
+    hl(0, "Cursor", { fg = c.White })
+    hl(0, "CursorLine", { fg = c.DarkGray })
+    hl(0, "CursorColumn", {})
+    hl(0, "ColorColumn", {})
+    hl(0, "LineNr", { fg = c.DarkGray })
+    hi(0, "CursorLineNr", { fg = c.MidGray })
+
     -- Literals
     hl(0, "Constant", { fg = c.Carnation })
     hl(0, "Boolean", { fg = c.Carnation })
@@ -30,7 +38,7 @@ theme.set_highlights = function (opts)
     hl(0, "PreProc", { fg = c.Taffy })
     hl(0, "Include", { fg = c.Taffy })
     hl(0, "Define", { fg = c.Taffy })
-    hl(0, "Macro", { fg = c.Taffy })
+    hl(0, "Macro", { fg = c.BalletSlipper })
     hl(0, "PreCondit", { fg = c.Taffy })
 
     -- Type-related
@@ -44,7 +52,7 @@ theme.set_highlights = function (opts)
     
     -- Misc
     hl(0, "Identifier", { fg = c.Pink })
-    hl(0, "Function", { fg = c.Pink })
+    hl(0, "Function", { fg = c.Carnation })
     hl(0, "Operator", { fg = c.Blush })
     hl(0, "Comment", {
         fg = c.DarkGray,
