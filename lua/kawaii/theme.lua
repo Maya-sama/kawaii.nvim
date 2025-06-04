@@ -61,7 +61,7 @@ theme.set_highlights = function (opts)
     })
     hl(0, "Todo", {
         fg = c.HotPink,
-        bg = c.Blush,
+        bg = c.Pink,
         bold = true
     })
     hl(0, "Special", { fg = c.Yellow })
