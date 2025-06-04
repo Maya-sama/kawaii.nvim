@@ -51,7 +51,7 @@ theme.set_highlights = function (opts)
         italic = opts.italic_comments
     })
     hl(0, "Todo", {
-        fg = c.Black,
+        fg = c.HotPink,
         bg = c.Blush,
         bold = true
     })
