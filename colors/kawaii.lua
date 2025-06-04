@@ -1,2 +1,2 @@
-local kawaii = require("kawaii.init")
+local kawaii = require("kawaii")
 kawaii.load()
