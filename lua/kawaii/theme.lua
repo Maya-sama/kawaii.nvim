@@ -5,10 +5,10 @@ theme.set_highlights = function (opts)
     local c = require("kawaii.colors").get_colors()
 
     hl(0, "Normal", {
-        fg = c["NormalFG"],
+        fg = c.NormalFG,
         bg = opts.transparent
-                 and vim.api.nvim_get_hl(0, { name = "Normal"})["bg"]
-                 or c["NormalBG"]
+                 and vim.api.nvim_get_hl(0, { name = "Normal"}).bg
+                 or c.NormalBG
     })
 
     for name, style in pairs(opts.override_colors or {}) do
