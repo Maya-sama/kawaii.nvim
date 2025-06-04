@@ -64,6 +64,9 @@ theme.set_highlights = function (opts)
         bg = c.Blush,
         bold = true
     })
+    hl(0, "Special", { fg = c.Yellow })
+    hl(0, "SpecialChar", { fg = c.Yellow })
+    hl(0, "Directory", { fg = c.Taffy })
     hl(0, "Link", { underlined = opts.underline_link })
     hl(0, "Error", { fg = c.Error })
     
