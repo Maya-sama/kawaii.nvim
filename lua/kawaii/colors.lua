@@ -22,11 +22,11 @@ colors.get_colors = function ()
         Blue = "#9EA1DE",
 
         HotPink = "#FF46B4",
-        Taffy = "#FA86C4",
-        BalletSlipper = "#F79AC0",
-        Carnation = "#FFA6E9",
-        Pink = "#FCBAFB",
-        Blush = "#FECEFE",
+        Taffy = "#F75AC0",
+        BalletSlipper = "#FF76D4",
+        Carnation = "#FF96E9",
+        Pink = "#FCAAFB",
+        Blush = "#FEBEFE",
 
         Error = "#FF5050"
     }
