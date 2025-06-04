@@ -43,8 +43,8 @@ theme.set_highlights = function (opts)
     hl(0, "StorageClass", { fg = c.Blush })
     
     -- Misc
-    hl(0, "Identifier", { fg = c.Carnation })
-    hl(0, "Function", { fg = c.Carnation })
+    hl(0, "Identifier", { fg = c.Pink })
+    hl(0, "Function", { fg = c.Pink })
     hl(0, "Operator", { fg = c.Blush })
     hl(0, "Comment", {
         fg = c.DarkGray,
