@@ -1,7 +1,7 @@
 local kawaii = {}
 
-local config = require("config")
-local theme = require("theme")
+local config = require("kawaii.config")
+local theme = require("kawaii.theme")
 
 kawaii.setup = config.setup
 
