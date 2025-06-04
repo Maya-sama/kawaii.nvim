@@ -1,7 +1,5 @@
 local theme = {}
 
-local 
-
 theme.set_highlights = function (opts)
     local hl = vim.api.nvim_set_hl
     local c = require("kawaii.colors").get_colors()
