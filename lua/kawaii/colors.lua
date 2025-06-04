@@ -20,6 +20,7 @@ colors.get_colors = function ()
         Cyan = "#B7D3DF",
         Blue = "#9EA1DE",
 
+        HotPink = "#FF1694",
         Taffy = "#FA86C4",
         BalletSlipper = "#F79AC0",
         Carnation = "#FFA6E9",
