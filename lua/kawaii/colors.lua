@@ -10,8 +10,10 @@ colors.get_colors = function ()
         NormalFG = "#D4D4D4",
         NormalBG = "#1F1F1F",
 
-        Gray = "#888888",
-        DarkGray = "#444444",
+        White = "#D7D7D7",
+        Gray = "#A8A8A8",
+        DarkGray = "#646464",
+        Black = "#000000",
         Red = "#FD8A8A",
         Yellow = "#F1F7B5",
         Green = "#B2FFA3",
