@@ -10,6 +10,8 @@ colors.get_colors = function ()
         NormalFG = "#D4D4D4",
         NormalBG = "#1F1F1F",
 
+        Gray = "#888888",
+        DarkGray = "#444444",
         Red = "#FD8A8A",
         Yellow = "#F1F7B5",
         Green = "#B2FFA3",
@@ -20,7 +22,9 @@ colors.get_colors = function ()
         BalletSlipper = "#F79AC0",
         Carnation = "#FFA6E9",
         Pink = "#FCBAFB",
-        Blush = "#FECEFE"
+        Blush = "#FECEFE",
+
+        Error = "#FF5050"
     }
 end
 
