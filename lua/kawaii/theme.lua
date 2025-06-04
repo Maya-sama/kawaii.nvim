@@ -17,7 +17,7 @@ theme.set_highlights = function (opts)
     hl(0, "CursorColumn", {})
     hl(0, "ColorColumn", {})
     hl(0, "LineNr", { fg = c.DarkGray })
-    hi(0, "CursorLineNr", { fg = c.MidGray })
+    hl(0, "CursorLineNr", { fg = c.MidGray })
 
     -- Literals
     hl(0, "Constant", { fg = c.Carnation })
