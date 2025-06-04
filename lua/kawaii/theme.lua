@@ -32,7 +32,7 @@ theme.set_highlights = function (opts)
     hl(0, "Conditional", { fg = c.Taffy })
     hl(0, "Repeat", { fg = c.Taffy })
     hl(0, "Label", { fg = c.Taffy })
-    hl(0, "Exception", { fg = c.Error })
+    hl(0, "Exception", { fg = c.HotPink })
 
     -- Preprocessor
     hl(0, "PreProc", { fg = c.Taffy })
@@ -54,6 +54,7 @@ theme.set_highlights = function (opts)
     hl(0, "Identifier", { fg = c.Pink })
     hl(0, "Function", { fg = c.Carnation })
     hl(0, "Operator", { fg = c.Blush })
+    hl(0, "Delimiter", { fg = c.Blush })
     hl(0, "Comment", {
         fg = c.DarkGray,
         italic = opts.italic_comments
