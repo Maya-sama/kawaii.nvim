@@ -67,7 +67,7 @@ theme.set_highlights = function (opts)
     hl(0, "Special", { fg = c.Yellow })
     hl(0, "SpecialChar", { fg = c.Yellow })
     hl(0, "Directory", { fg = c.Taffy })
-    hl(0, "Link", { underlined = opts.underline_link })
+    hl(0, "Link", { underlined = opts.underline_links })
     hl(0, "Error", { fg = c.Error })
     
     for name, style in pairs(opts.override_colors or {}) do
