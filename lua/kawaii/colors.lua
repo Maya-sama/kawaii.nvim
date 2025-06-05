@@ -4,11 +4,17 @@ local colors = {}
 ---@return color[]
 ---@nodiscard
 colors.get_colors = function ()
+    local config = require("kawaii.config")
+
     return {
         None = "NONE",
 
         NormalFG = "#D4D4D4",
         NormalBG = "#211F1F",
+
+        RealBG = config.opts.transparent
+                     and "NONE"
+                     or "#211F1F",
 
         White = "#E7E7E7",
         Gray = "#C8C8C8",
