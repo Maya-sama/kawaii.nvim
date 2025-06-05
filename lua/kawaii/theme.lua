@@ -20,10 +20,10 @@ theme.set_highlights = function (opts)
     hl(0, "CursorLineNr", { fg = c.MidGray })
 
     -- Literals
-    hl(0, "Constant", { fg = c.Lavender })
-    hl(0, "Boolean", { fg = c.Lavender })
-    hl(0, "Number", { fg = c.Lavender })
-    hl(0, "Float", { fg = c.Lavender })
+    hl(0, "Constant", { fg = c.LightViolet })
+    hl(0, "Boolean", { fg = c.LightViolet })
+    hl(0, "Number", { fg = c.LightViolet })
+    hl(0, "Float", { fg = c.LightViolet })
     hl(0, "String", { fg = c.Cyan })
 
     -- Keywords
