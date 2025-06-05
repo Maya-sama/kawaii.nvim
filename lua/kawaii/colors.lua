@@ -8,7 +8,7 @@ colors.get_colors = function ()
         None = "NONE",
 
         NormalFG = "#D4D4D4",
-        NormalBG = "#1F1F1F",
+        NormalBG = "#211F1F",
 
         White = "#E7E7E7",
         Gray = "#C8C8C8",
