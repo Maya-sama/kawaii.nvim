@@ -24,4 +24,5 @@ colorscheme kawaii
 ## Todo
 
 - [ ] Make some screenshots.
+- [x] Add [LuaLine](https://github.com/nvim-lualine/lualine.nvim) support.
 - [ ] Add [IndentBlankline](https://github.com/lukas-reineke/indent-blankline.nvim) support.
