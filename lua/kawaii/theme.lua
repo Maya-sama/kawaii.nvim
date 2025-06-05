@@ -20,10 +20,10 @@ theme.set_highlights = function (opts)
     hl(0, "CursorLineNr", { fg = c.MidGray })
 
     -- Literals
-    hl(0, "Constant", { fg = c.Carnation })
-    hl(0, "Boolean", { fg = c.Carnation })
-    hl(0, "Number", { fg = c.Carnation })
-    hl(0, "Float", { fg = c.Carnation })
+    hl(0, "Constant", { fg = c.Lavender })
+    hl(0, "Boolean", { fg = c.Lavender })
+    hl(0, "Number", { fg = c.Lavender })
+    hl(0, "Float", { fg = c.Lavender })
     hl(0, "String", { fg = c.Cyan })
 
     -- Keywords
@@ -48,7 +48,7 @@ theme.set_highlights = function (opts)
     })
     hl(0, "Structure", { fg = c.Taffy })
     hl(0, "Typedef", { fg = c.Taffy })
-    hl(0, "StorageClass", { fg = c.Blush })
+    hl(0, "StorageClass", { fg = c.Pink })
     
     -- Misc
     hl(0, "Identifier", { fg = c.Pink })
