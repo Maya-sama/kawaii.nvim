@@ -69,7 +69,7 @@ theme.set_highlights = function (opts)
     hl(0, "Directory", { fg = c.Taffy })
     hl(0, "Link", {
         fg = c.Blue,
-        underlined = opts.underline_links
+        underline = opts.underline_links
     })
     hl(0, "Error", { fg = c.Error })
     
