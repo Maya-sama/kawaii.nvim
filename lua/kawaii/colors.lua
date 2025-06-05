@@ -27,7 +27,7 @@ colors.get_colors = function ()
         Carnation = "#FF90EF",
         Pink = "#FCAAFB",
         Blush = "#FEBEFE",
-        Lavender = "#C58EEC",
+        Lavender = "#D59EFC",
         LightViolet = "#D6B4FC",
         
         Error = "#FF5050"
