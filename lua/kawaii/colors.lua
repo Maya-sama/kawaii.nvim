@@ -21,11 +21,11 @@ colors.get_colors = function ()
         MidGray = "#A9A9A9",
         DarkGray = "#848484",
         Black = "#000000",
-        Red = "#FD8A8A",
-        Yellow = "#F1F7B5",
-        Green = "#B2FFA3",
+        Red = "#FF5189",
+        Yellow = "#FDFD96",
+        Green = "#98FFB6",
         Cyan = "#B7D3DF",
-        Blue = "#9EA1DE",
+        Blue = "#80A0FF",
 
         HotPink = "#FF46B4",
         Taffy = "#FF6CDF",
@@ -33,6 +33,7 @@ colors.get_colors = function ()
         Carnation = "#FF90EF",
         Pink = "#FCAAFB",
         Blush = "#FEBEFE",
+        Violet = "#D183E8",
         Lavender = "#D59EFC",
         LightViolet = "#D6B4FC",
         
