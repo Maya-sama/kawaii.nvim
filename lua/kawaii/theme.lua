@@ -35,11 +35,11 @@ theme.set_highlights = function (opts)
     hl(0, "Exception", { fg = c.HotPink })
 
     -- Preprocessor
-    hl(0, "PreProc", { fg = c.Taffy })
-    hl(0, "Include", { fg = c.Taffy })
-    hl(0, "Define", { fg = c.Taffy })
-    hl(0, "Macro", { fg = c.BalletSlipper })
-    hl(0, "PreCondit", { fg = c.Taffy })
+    hl(0, "PreProc", { fg = c.Lavender })
+    hl(0, "Include", { fg = c.Lavender })
+    hl(0, "Define", { fg = c.Lavender })
+    hl(0, "Macro", { fg = c.Lavender })
+    hl(0, "PreCondit", { fg = c.Lavender })
 
     -- Type-related
     hl(0, "Type", {
@@ -67,7 +67,10 @@ theme.set_highlights = function (opts)
     hl(0, "Special", { fg = c.Yellow })
     hl(0, "SpecialChar", { fg = c.Yellow })
     hl(0, "Directory", { fg = c.Taffy })
-    hl(0, "Link", { underlined = opts.underline_links })
+    hl(0, "Link", {
+        fg = c.Blue,
+        underlined = opts.underline_links
+    })
     hl(0, "Error", { fg = c.Error })
     
     for name, style in pairs(opts.override_colors or {}) do
