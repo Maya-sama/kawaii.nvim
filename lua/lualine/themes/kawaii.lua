@@ -4,8 +4,8 @@ local c = require("kawaii.colors").get_colors()
 return {
     normal = {
         a = { fg = c.Black, bg = c.White, gui = "bold" },
-        b = { fg = c.Blue, bg = c.RealBG },
-        c = { fg = c.White, bg = c.RealBG }
+        b = { fg = c.NormalFG, bg = c.RealBG },
+        c = { fg = c.NormalFG, bg = c.RealBG }
     },
     visual = {
         a = { fg = c.Black, bg = c.Cyan, gui = "bold" },
