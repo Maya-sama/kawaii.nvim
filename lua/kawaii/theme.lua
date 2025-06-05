@@ -48,7 +48,7 @@ theme.set_highlights = function (opts)
     })
     hl(0, "Structure", { fg = c.Taffy })
     hl(0, "Typedef", { fg = c.Taffy })
-    hl(0, "StorageClass", { fg = c.Pink })
+    hl(0, "StorageClass", { fg = c.Carnation })
     
     -- Misc
     hl(0, "Identifier", { fg = c.Pink })
