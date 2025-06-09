@@ -21,6 +21,10 @@ Plug "Sonya-sama/kawaii.nvim"
 colorscheme kawaii
 ```
 
+## Useful links
+
+- [The Vimcolorschemes page](https://vimcolorschemes.com/sonya-sama/kawaii.nvim)
+
 ## Todo
 
 - [ ] Make some screenshots.
