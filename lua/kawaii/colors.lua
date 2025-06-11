@@ -16,7 +16,7 @@ colors.get_colors = function ()
                      and "NONE"
                      or "#211F1F",
 
-        White = "#E7E7E7",
+        White = "#F5EFFF",
         Gray = "#C8C8C8",
         MidGray = "#A9A9A9",
         DarkGray = "#848484",
@@ -24,14 +24,14 @@ colors.get_colors = function ()
         Red = "#FF5189",
         Yellow = "#FDFD96",
         Green = "#98FFB6",
-        Cyan = "#F4F8D3",
+        Cyan = "#C4D9FF",
         Blue = "#80A0FF",
 
-        HotPink = "#C562AF",
+        HotPink = "#DE3163",
         Taffy = "#DD88CF",
-        BalletSlipper = "#DB8DD0",
-        Carnation = "#FFB8E0",
-        Pink = "#FEC5F6",
+        BalletSlipper = "#EC7FA9",
+        Carnation = "#F7A8C4",
+        Pink = "#FFB8E0",
         Blush = "#FFEDFA",
         Violet = "#D183E8",
         Lavender = "#B7B1F2",
