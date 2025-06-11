@@ -44,7 +44,8 @@ theme.set_highlights = function (opts)
     -- Type-related
     hl(0, "Type", {
         fg = c.Blush,
-        bold = true
+        italic = opts.italic_types,
+        bold = opts.bold_types
     })
     hl(0, "Structure", { fg = c.Taffy })
     hl(0, "Typedef", { fg = c.Taffy })
