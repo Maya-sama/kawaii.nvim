@@ -5,7 +5,9 @@ local config = {
 local defaults = {
     transparent = false,
     italic_comments = false,
-    underline_links = false
+    underline_links = false,
+    bold_types = false,
+    italic_types = false
 }
 
 ---@param user_opts? table
