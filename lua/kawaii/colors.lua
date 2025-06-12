@@ -34,7 +34,7 @@ colors.get_colors = function ()
         Pink = "#FF99D7",
         Blush = "#FEC5F6",
         Violet = "#8F87F1",
-        Lavender = "#C68EFD",
+        Lavender = "#D69EFF",
         LightViolet = "#E9A5F1",
         
         Error = "#FF5050"
