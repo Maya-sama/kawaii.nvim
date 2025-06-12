@@ -23,24 +23,20 @@ theme.set_highlights = function (opts)
     hl(0, "DiffChange", { bg = c.Yellow })
     hl(0, "DiffDelete", { bg = c.Red })
     hl(0, "SpellBad", {
-        fg = "NONE",
-        bg = c.Red,
-        undercurl = true
+        fg = c.Black,
+        bg = c.Red
     })
     hl(0, "SpellCap", {
-        fg = "NONE",
-        bg = c.Yellow,
-        undercurl = true
+        fg = c.Black,
+        bg = c.Yellow
     })
     hl(0, "SpellRare", {
-        fg = "NONE",
-        bg = c.Cyan,
-        undercurl = true
+        fg = c.Black,
+        bg = c.Cyan
     })
     hl(0, "SpellLocal", {
-        fg = "NONE",
-        bg = c.Blue,
-        undercurl = true
+        fg = c.Black,
+        bg = c.Blue
     })
 
     -- Literals
