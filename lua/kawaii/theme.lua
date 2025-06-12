@@ -18,6 +18,30 @@ theme.set_highlights = function (opts)
     hl(0, "ColorColumn", {})
     hl(0, "LineNr", { fg = c.DarkGray })
     hl(0, "CursorLineNr", { fg = c.MidGray })
+    hl(0, "Search", { bg = c.MidGray })
+    hl(0, "DiffAdd", { bg = c.Green })
+    hl(0, "DiffChange", { bg = c.Yellow })
+    hl(0, "DiffDelete", { bg = c.Red })
+    hl(0, "SpellBad", {
+        fg = "NONE",
+        bg = c.Red,
+        undercurl = true
+    })
+    hl(0, "SpellCap", {
+        fg = "NONE",
+        bg = c.Yellow,
+        undercurl = true
+    })
+    hl(0, "SpellRare", {
+        fg = "NONE",
+        bg = c.Cyan,
+        undercurl = true
+    })
+    hl(0, "SpellLocal", {
+        fg = "NONE",
+        bg = c.Blue,
+        undercurl = true
+    })
 
     -- Literals
     hl(0, "Constant", { fg = c.LightViolet })
@@ -67,7 +91,8 @@ theme.set_highlights = function (opts)
     })
     hl(0, "Special", { fg = c.Yellow })
     hl(0, "SpecialChar", { fg = c.Yellow })
-    hl(0, "Directory", { fg = c.Taffy })
+    hl(0, "SpecialComment", { fg = c.Green })
+    hl(0, "Directory", { fg = c.BalletSlippers })
     hl(0, "Link", {
         fg = c.Blue,
         underline = opts.underline_links
