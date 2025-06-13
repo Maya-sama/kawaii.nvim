@@ -88,7 +88,7 @@ theme.set_highlights = function (opts)
     hl(0, "Special", { fg = c.Yellow })
     hl(0, "SpecialChar", { fg = c.Yellow })
     hl(0, "SpecialComment", { fg = c.Green })
-    hl(0, "Directory", { fg = c.BalletSlippers })
+    hl(0, "Directory", { fg = c.BalletSlipper })
     hl(0, "Link", {
         fg = c.Blue,
         underline = opts.underline_links
