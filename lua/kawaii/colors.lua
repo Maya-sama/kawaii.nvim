@@ -36,7 +36,8 @@ colors.get_colors = function ()
         Violet = "#8F87F1",
         Lavender = "#D69EFF",
         LightViolet = "#E9A5F1",
-        
+
+        Warning = "#FFFF00",
         Error = "#FF5050",
         Directory = "#D2BCE9"
     }
