@@ -13,6 +13,8 @@ theme.set_highlights = function (opts)
 
     -- Meta
     hl(0, "Cursor", { fg = c.White })
+    hl(0, "lCursor", { fg = c.White })
+    hl(0, "CursorIM", { fg = c.White })
     hl(0, "CursorLine", { fg = c.DarkGray })
     hl(0, "CursorColumn", {})
     hl(0, "ColorColumn", {})
@@ -80,9 +82,12 @@ theme.set_highlights = function (opts)
         fg = c.DarkGray,
         italic = opts.italic_comments
     })
+    hl(0, "Note", {
+        fg = c.Warning,
+        bold = true
+    })
     hl(0, "Todo", {
-        fg = c.White,
-        bg = c.HotPink,
+        fg = c.Error,
         bold = true
     })
     hl(0, "Special", { fg = c.Yellow })
@@ -97,6 +102,8 @@ theme.set_highlights = function (opts)
         underline = opts.underline_links
     })
     hl(0, "Error", { fg = c.Error })
+    hl(0, "WarningMsg", { fg = c.Warning })
+    hl(0, "ErrorMsg", { fg = c.Error })
     
     for name, style in pairs(opts.override_colors or {}) do
         hl(0, name, style)
