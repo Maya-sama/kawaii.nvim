@@ -37,7 +37,8 @@ colors.get_colors = function ()
         Lavender = "#D69EFF",
         LightViolet = "#E9A5F1",
         
-        Error = "#FF5050"
+        Error = "#FF5050",
+        Directory = "#D2BCE9"
     }
 end
 
