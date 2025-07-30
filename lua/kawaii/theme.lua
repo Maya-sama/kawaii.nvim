@@ -105,13 +105,13 @@ theme.set_highlights = function (opts)
         fg = c.Pink,
         bold = true
     })
-    hi(0, "netrwPlain", { fg = c.White })
-    hi(0, "netrwClassify", { fg = c.Blush })
-    hi(0, "netrwList", { fg = c.White })
-    hi(0, "netrwHelpCmd", { fg = c.Pink })
-    hi(0, "netrwCmdNote", { fg = c.White })
-    hi(0, "netrwQHTopic", { fg = c.LightViolet })
-    hi(0, "netrwComment", { fg = c.MidGray })
+    hl(0, "netrwPlain", { fg = c.White })
+    hl(0, "netrwClassify", { fg = c.Blush })
+    hl(0, "netrwList", { fg = c.White })
+    hl(0, "netrwHelpCmd", { fg = c.Pink })
+    hl(0, "netrwCmdNote", { fg = c.White })
+    hl(0, "netrwQHTopic", { fg = c.LightViolet })
+    hl(0, "netrwComment", { fg = c.MidGray })
     
     for name, style in pairs(opts.override_colors or {}) do
         hl(0, name, style)
