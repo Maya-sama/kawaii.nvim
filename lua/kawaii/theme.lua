@@ -112,6 +112,7 @@ theme.set_highlights = function (opts)
     hl(0, "netrwCmdNote", { fg = c.White })
     hl(0, "netrwQHTopic", { fg = c.LightViolet })
     hl(0, "netrwComment", { fg = c.MidGray })
+    hl(0, "netrwVersion", { fg = c.DarkGray })
     
     for name, style in pairs(opts.override_colors or {}) do
         hl(0, name, style)
