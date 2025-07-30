@@ -37,7 +37,8 @@ colors.get_colors = function ()
         Warning = "#FFFF00",
         Error = "#FF5050",
         Directory = "#EDD0EF",
-        String = "#8ACCD5"
+        String = "#8ACCD5",
+        CursorLine = "#323131"
     }
 end
 
