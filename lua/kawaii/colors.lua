@@ -31,7 +31,7 @@ colors.get_colors = function ()
         Taffy = "#FF78B8",
         Pink = "#FFA3D9",
         Blush = "#FFBDEF",
-        Lavender = "#C68EFD",
+        Lavender = "#D995FF",
         LightViolet = "#E999FF",
 
         Warning = "#FFFF00",
