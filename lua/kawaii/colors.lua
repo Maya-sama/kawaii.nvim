@@ -28,8 +28,8 @@ colors.get_colors = function ()
         Blue = "#80A0FF",
 
         HotPink = "#FF5598",
-        Taffy = "#FF74B8",
-        Pink = "#FF99D7",
+        Taffy = "#FF78B8",
+        Pink = "#FFA3D9",
         Blush = "#FFBDEF",
         Lavender = "#C68EFD",
         LightViolet = "#E999FF",
