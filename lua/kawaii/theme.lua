@@ -93,10 +93,6 @@ theme.set_highlights = function (opts)
     hl(0, "Special", { fg = c.Yellow })
     hl(0, "SpecialChar", { fg = c.Yellow })
     hl(0, "SpecialComment", { fg = c.Green })
-    hl(0, "Directory", {
-        fg = c.Directory,
-        bold = true
-    })
     hl(0, "Link", {
         fg = c.Blue,
         underline = opts.underline_links
@@ -104,6 +100,18 @@ theme.set_highlights = function (opts)
     hl(0, "Error", { fg = c.Error })
     hl(0, "WarningMsg", { fg = c.Warning })
     hl(0, "ErrorMsg", { fg = c.Error })
+
+    hl(0, "netrwDir", {
+        fg = c.Pink,
+        bold = true
+    })
+    hi(0, "netrwPlain", { fg = c.White })
+    hi(0, "netrwClassify", { fg = c.Blush })
+    hi(0, "netrwList", { fg = c.White })
+    hi(0, "netrwHelpCmd", { fg = c.Pink })
+    hi(0, "netrwCmdNote", { fg = c.White })
+    hi(0, "netrwQHTopic", { fg = c.LightViolet })
+    hi(0, "netrwComment", { fg = c.MidGray })
     
     for name, style in pairs(opts.override_colors or {}) do
         hl(0, name, style)

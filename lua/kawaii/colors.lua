@@ -9,7 +9,7 @@ colors.get_colors = function ()
     return {
         None = "NONE",
 
-        NormalFG = "#D4D4D4",
+        NormalFG = "#DFDEDF",
         NormalBG = "#211F1F",
 
         RealBG = config.opts.transparent
@@ -32,7 +32,7 @@ colors.get_colors = function ()
         Pink = "#FF99D7",
         Blush = "#FFBDEF",
         Lavender = "#C68EFD",
-        LightViolet = "#E9A5F1",
+        LightViolet = "#E999FF",
 
         Warning = "#FFFF00",
         Error = "#FF5050",
