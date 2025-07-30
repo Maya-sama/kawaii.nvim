@@ -23,23 +23,21 @@ colors.get_colors = function ()
         Black = "#000000",
         Red = "#FF5189",
         Yellow = "#FDFD96",
-        Green = "#98FFB6",
+        Green = "#80FFB0",
         Cyan = "#C4D9FF",
         Blue = "#80A0FF",
 
         HotPink = "#FF5598",
-        Taffy = "#FF64B8",
-        BalletSlipper = "#FF6FBF",
-        Carnation = "#FF84D0",
+        Taffy = "#FF74B8",
         Pink = "#FF99D7",
-        Blush = "#FFC2F2",
-        Violet = "#8F87F1",
-        Lavender = "#D69EFF",
+        Blush = "#FFBDEF",
+        Lavender = "#C68EFD",
         LightViolet = "#E9A5F1",
 
         Warning = "#FFFF00",
         Error = "#FF5050",
-        Directory = "#D2BCE9"
+        Directory = "#EDD0EF",
+        String = "#8ACCD5"
     }
 end
 

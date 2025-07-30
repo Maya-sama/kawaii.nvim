@@ -46,7 +46,7 @@ theme.set_highlights = function (opts)
     hl(0, "Boolean", { fg = c.LightViolet })
     hl(0, "Number", { fg = c.LightViolet })
     hl(0, "Float", { fg = c.LightViolet })
-    hl(0, "String", { fg = c.Cyan })
+    hl(0, "String", { fg = c.String })
 
     -- Keywords
     hl(0, "Keyword", { fg = c.Taffy })
@@ -71,11 +71,11 @@ theme.set_highlights = function (opts)
     })
     hl(0, "Structure", { fg = c.Taffy })
     hl(0, "Typedef", { fg = c.Taffy })
-    hl(0, "StorageClass", { fg = c.BalletSlipper })
+    hl(0, "StorageClass", { fg = c.Taffy })
     
     -- Misc
     hl(0, "Identifier", { fg = c.Pink })
-    hl(0, "Function", { fg = c.Carnation })
+    hl(0, "Function", { fg = c.Pink })
     hl(0, "Operator", { fg = c.Blush })
     hl(0, "Delimiter", { fg = c.Normal })
     hl(0, "Comment", {
