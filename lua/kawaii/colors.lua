@@ -31,6 +31,7 @@ colors.get_colors = function ()
         Taffy = "#FF78B8",
         Pink = "#FFA3D9",
         Blush = "#FFBDEF",
+        Orchid = "#FF87FF",
         Lavender = "#D995FF",
         LightViolet = "#E999FF",
 
@@ -38,7 +39,9 @@ colors.get_colors = function ()
         Error = "#FF5050",
         Directory = "#EDD0EF",
         String = "#8ACCD5",
-        CursorLine = "#323131"
+        CursorLine = "#323131",
+
+        StatusLineBG = "#303030"
     }
 end
 

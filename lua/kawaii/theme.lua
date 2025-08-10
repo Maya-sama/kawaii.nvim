@@ -1,121 +1,107 @@
 local theme = {}
 
+---@param opts table
 theme.set_highlights = function (opts)
-    local hl = vim.api.nvim_set_hl
     local c = require("kawaii.colors").get_colors()
 
-    hl(0, "Normal", {
+    ---@param name string
+    ---@param style table
+    local function hl(name, style)
+        vim.api.nvim_set_hl(0, name, style)
+    end
+    
+    hl("Normal", {
         fg = c.NormalFG,
         bg = opts.transparent
-                 and c.None --vim.api.nvim_get_hl(0, { name = "Normal"}).bg
+                 and c.None --vim.api.nvim_get_hl({ name = "Normal"}).bg
                  or c.NormalBG
     })
 
     -- Meta
-    hl(0, "Cursor", { fg = c.White })
-    hl(0, "lCursor", { fg = c.White })
-    hl(0, "CursorIM", { fg = c.White })
-    hl(0, "CursorLine", { bg = c.CursorLine })
-    hl(0, "CursorColumn", {})
-    hl(0, "ColorColumn", {})
-    hl(0, "LineNr", { fg = c.DarkGray })
-    hl(0, "CursorLineNr", { fg = c.MidGray })
-    hl(0, "Search", { bg = c.MidGray })
-    hl(0, "DiffAdd", { bg = c.Green })
-    hl(0, "DiffChange", { bg = c.Yellow })
-    hl(0, "DiffDelete", { bg = c.Red })
-    hl(0, "SpellBad", {
-        fg = c.Black,
-        bg = c.Red
-    })
-    hl(0, "SpellCap", {
-        fg = c.Black,
-        bg = c.Yellow
-    })
-    hl(0, "SpellRare", {
-        fg = c.Black,
-        bg = c.Cyan
-    })
-    hl(0, "SpellLocal", {
-        fg = c.Black,
-        bg = c.Blue
-    })
+    hl("Cursor", { fg = c.White })
+    hl("lCursor", { fg = c.White })
+    hl("CursorIM", { fg = c.White })
+    hl("CursorLine", { bg = c.CursorLine })
+    hl("CursorColumn", {})
+    hl("ColorColumn", {})
+    hl("LineNr", { fg = c.DarkGray })
+    hl("CursorLineNr", { fg = c.MidGray })
+    hl("Search", { bg = c.MidGray })
+    hl("DiffAdd", { fg = c.Black, bg = c.Green })
+    hl("DiffChange", { fg = c.Black, bg = c.Yellow })
+    hl("DiffDelete", { fg = c.Black, bg = c.Red })
+    hl("DiffText", { fg = c.Black, bg = c.Cyan })
+    hl("SpellBad", { fg = c.Black, bg = c.Red })
+    hl("SpellCap", { fg = c.Black, bg = c.Yellow })
+    hl("SpellRare", { fg = c.Black,/bg = c.Cyan })
+    hl("SpellLocal", { fg = c.Black, bg = c.Blue })
 
     -- Literals
-    hl(0, "Constant", { fg = c.LightViolet })
-    hl(0, "Boolean", { fg = c.LightViolet })
-    hl(0, "Number", { fg = c.LightViolet })
-    hl(0, "Float", { fg = c.LightViolet })
-    hl(0, "String", { fg = c.String })
+    hl("Constant", { fg = c.LightViolet })
+    hl("Boolean", { fg = c.LightViolet })
+    hl("Number", { fg = c.LightViolet })
+    hl("Float", { fg = c.LightViolet })
+    hl("String", { fg = c.String })
 
     -- Keywords
-    hl(0, "Keyword", { fg = c.Taffy })
-    hl(0, "Statement", { fg = c.Taffy })
-    hl(0, "Conditional", { fg = c.Taffy })
-    hl(0, "Repeat", { fg = c.Taffy })
-    hl(0, "Label", { fg = c.Taffy })
-    hl(0, "Exception", { fg = c.HotPink })
+    hl("Keyword", { fg = c.Taffy })
+    hl("Statement", { fg = c.Taffy })
+    hl("Conditional", { fg = c.Taffy })
+    hl("Repeat", { fg = c.Taffy })
+    hl("Label", { fg = c.Taffy })
+    hl("Exception", { fg = c.HotPink })
 
     -- Preprocessor
-    hl(0, "PreProc", { fg = c.Lavender })
-    hl(0, "Include", { fg = c.Lavender })
-    hl(0, "Define", { fg = c.Lavender })
-    hl(0, "Macro", { fg = c.Lavender })
-    hl(0, "PreCondit", { fg = c.Lavender })
+    hl("PreProc", { fg = c.Lavender })
+    hl("Include", { fg = c.Lavender })
+    hl("Define", { fg = c.Lavender })
+    hl("Macro", { fg = c.Lavender })
+    hl("PreCondit", { fg = c.Lavender })
 
     -- Type-related
-    hl(0, "Type", {
+    hl("Type", {
         fg = c.Pink,
         italic = opts.italic_types,
         bold = opts.bold_types
     })
-    hl(0, "Structure", { fg = c.Taffy })
-    hl(0, "Typedef", { fg = c.Taffy })
-    hl(0, "StorageClass", { fg = c.Taffy })
+    hl("Structure", { fg = c.Taffy })
+    hl("Typedef", { fg = c.Taffy })
+    hl("StorageClass", { fg = c.Taffy })
     
     -- Misc
-    hl(0, "Identifier", { fg = c.Pink })
-    hl(0, "Function", { fg = c.Pink })
-    hl(0, "Operator", { fg = c.Blush })
-    hl(0, "Delimiter", { fg = c.Normal })
-    hl(0, "Comment", {
-        fg = c.DarkGray,
-        italic = opts.italic_comments
-    })
-    hl(0, "Note", {
-        fg = c.Warning,
-        bold = true
-    })
-    hl(0, "Todo", {
-        fg = c.Error,
-        bold = true
-    })
-    hl(0, "Special", { fg = c.Yellow })
-    hl(0, "SpecialChar", { fg = c.Yellow })
-    hl(0, "SpecialComment", { fg = c.Green })
-    hl(0, "Link", {
-        fg = c.Blue,
-        underline = opts.underline_links
-    })
-    hl(0, "Error", { fg = c.Error })
-    hl(0, "WarningMsg", { fg = c.Warning })
-    hl(0, "ErrorMsg", { fg = c.Error })
+    hl("Identifier", { fg = c.Pink })
+    hl("Function", { fg = c.Pink })
+    hl("Operator", { fg = c.Blush })
+    hl("Delimiter", { fg = c.Normal })
+    hl("Comment", { fg = c.DarkGray, italic = opts.italic_comments })
+    hl("Note", { fg = c.Warning, bold = true })
+    hl("Todo", { fg = c.Error, bold = true })
+    hl("Special", { fg = c.Yellow })
+    hl("SpecialChar", { fg = c.Yellow })
+    hl("SpecialComment", { fg = c.Green })
+    hl("Link", { fg = c.Blue, underline = opts.underline_links })
+    hl("Error", { fg = c.Error })
+    hl("WarningMsg", { fg = c.Warning })
+    hl("ErrorMsg", { fg = c.Error })
+    hl("MoreMsg", { ctermfg = 213, fg = c.Orchid })
 
-    hl(0, "netrwDir", {
-        fg = c.Pink,
-        bold = true
-    })
-    hl(0, "netrwPlain", { fg = c.White })
-    hl(0, "netrwClassify", { fg = c.Blush })
-    hl(0, "netrwList", { fg = c.White })
-    hl(0, "netrwHelpCmd", { fg = c.Pink })
-    hl(0, "netrwCmdNote", { fg = c.White })
-    hl(0, "netrwQHTopic", { fg = c.LightViolet })
-    hl(0, "netrwComment", { fg = c.MidGray })
-    hl(0, "netrwVersion", { fg = c.DarkGray })
+    -- Statusline
+    hl("StatusLine", { fg = c.NormalFG, bg = c.StatusLineBG })
+    hl("ModeMsg", { ctermfg = 15, fg = c.White })
+
+    -- netrw
+    hl("netrwDir", { fg = c.Pink, bold = true })
+    hl("netrwPlain", { fg = c.White })
+    hl("netrwClassify", { fg = c.Blush })
+    hl("netrwList", { fg = c.White })
+    hl("netrwHelpCmd", { fg = c.Pink })
+    hl("netrwCmdNote", { fg = c.White })
+    hl("netrwQHTopic", { fg = c.LightViolet })
+    hl("netrwComment", { fg = c.MidGray })
+    hl("netrwVersion", { fg = c.DarkGray })
     
     for name, style in pairs(opts.override_colors or {}) do
-        hl(0, name, style)
+        hl(name, style)
     end
 end
 
