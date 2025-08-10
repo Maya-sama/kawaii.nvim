@@ -33,7 +33,7 @@ theme.set_highlights = function (opts)
     hl("DiffText", { fg = c.Black, bg = c.Cyan })
     hl("SpellBad", { fg = c.Black, bg = c.Red })
     hl("SpellCap", { fg = c.Black, bg = c.Yellow })
-    hl("SpellRare", { fg = c.Black,/bg = c.Cyan })
+    hl("SpellRare", { fg = c.Black, bg = c.Cyan })
     hl("SpellLocal", { fg = c.Black, bg = c.Blue })
 
     -- Literals
