@@ -6,7 +6,8 @@ local defaults = {
     italic_comments = false,
     underline_links = false,
     bold_types = false,
-    italic_types = false
+    italic_types = false,
+    bg_blending_value = 1 / 16
 }
 
 ---@param user_opts? table

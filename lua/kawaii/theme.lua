@@ -1,12 +1,17 @@
 local theme = {}
 
-local function blend_with_white(hex, percent)
-    local r = tonumber(hex:sub(2, 3), 16)
-    local g = tonumber(hex:sub(4, 5), 16)
-    local b = tonumber(hex:sub(6, 7), 16)
+---@param color string
+---@param percent float
+---@return string
+local function blend_with_white(color, percent)
+    local r = tonumber(color:sub(2, 3), 16)
+    local g = tonumber(color:sub(4, 5), 16)
+    local b = tonumber(color:sub(6, 7), 16)
+
     r = math.floor(r + (255 - r) * percent)
     g = math.floor(g + (255 - g) * percent)
     b = math.floor(b + (255 - b) * percent)
+
     return string.format("#%02X%02X%02X", r, g, b)
 end
 
@@ -21,7 +26,7 @@ theme.set_highlights = function (opts)
     end
 
     ---@type string
-    local LightBG = blend_with_white(c.NormalBG, 0.1)
+    local LightBG = blend_with_white(c.NormalBG, opts.bg_blending_value)
     
     hl("Normal", {
         fg = c.NormalFG,
