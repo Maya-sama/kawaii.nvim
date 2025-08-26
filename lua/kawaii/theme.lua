@@ -19,6 +19,10 @@ end
 theme.set_highlights = function (opts)
     local c = require("kawaii.colors").get_colors()
 
+    for name, color in pairs(opts.override_colors or {}) do
+        c[name] = color
+    end
+
     ---@param name string
     ---@param style table
     local function hl(name, style)
@@ -27,7 +31,7 @@ theme.set_highlights = function (opts)
 
     ---@type string
     local LightBG = blend_with_white(c.NormalBG, opts.bg_blending_value)
-    
+
     hl("Normal", {
         fg = c.NormalFG,
         bg = c.NormalBG
@@ -83,7 +87,7 @@ theme.set_highlights = function (opts)
     hl("Structure", { fg = c.Taffy })
     hl("Typedef", { fg = c.Taffy })
     hl("StorageClass", { fg = c.Taffy })
-    
+
     -- Misc
     hl("Identifier", { fg = c.Pink })
     hl("Function", { fg = c.Pink })
@@ -115,10 +119,6 @@ theme.set_highlights = function (opts)
     hl("netrwQHTopic", { fg = c.LightViolet })
     hl("netrwComment", { fg = c.MidGray })
     hl("netrwVersion", { fg = c.DarkGray })
-    
-    for name, style in pairs(opts.override_colors or {}) do
-        hl(name, style)
-    end
 end
 
 return theme
