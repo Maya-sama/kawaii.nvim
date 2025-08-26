@@ -3,7 +3,6 @@ local config = {
 }
 
 local defaults = {
-    transparent = false,
     italic_comments = false,
     underline_links = false,
     bold_types = false,

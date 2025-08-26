@@ -1,10 +1,8 @@
 ---@meta
 
---- Configuration for Kawaii
+--- Configuration for kawaii.nvim
 ---@class kawaii.config
---- Forbids Kawaii to change the background color
----@param transparent? boolean
---- Shall comments be rendered as italic
+--- Whether comments are rendered as italic
 ---@param italic_comments? boolean
---- Shall links (`Link' group) be underlined
+--- Whether links are underlined
 ---@param underline_links? boolean

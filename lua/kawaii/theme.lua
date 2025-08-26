@@ -1,5 +1,15 @@
 local theme = {}
 
+local function blend_with_white(hex, percent)
+    local r = tonumber(hex:sub(2, 3), 16)
+    local g = tonumber(hex:sub(4, 5), 16)
+    local b = tonumber(hex:sub(6, 7), 16)
+    r = math.floor(r + (255 - r) * percent)
+    g = math.floor(g + (255 - g) * percent)
+    b = math.floor(b + (255 - b) * percent)
+    return string.format("#%02X%02X%02X", r, g, b)
+end
+
 ---@param opts table
 theme.set_highlights = function (opts)
     local c = require("kawaii.colors").get_colors()
@@ -9,23 +19,24 @@ theme.set_highlights = function (opts)
     local function hl(name, style)
         vim.api.nvim_set_hl(0, name, style)
     end
+
+    ---@type string
+    local LightBG = blend_with_white(c.NormalBG, 0.1)
     
     hl("Normal", {
         fg = c.NormalFG,
-        bg = opts.transparent
-                 and c.None --vim.api.nvim_get_hl({ name = "Normal"}).bg
-                 or c.NormalBG
+        bg = c.NormalBG
     })
 
     -- Meta
     hl("Cursor", { fg = c.White })
     hl("lCursor", { fg = c.White })
     hl("CursorIM", { fg = c.White })
-    hl("CursorLine", { bg = c.CursorLine })
+    hl("CursorLine", { bg = c.LightBG })
     hl("CursorColumn", {})
     hl("ColorColumn", {})
     hl("LineNr", { fg = c.DarkGray })
-    hl("CursorLineNr", { fg = c.MidGray })
+    hl("CursorLineNr", { fg = c.Gray })
     hl("Search", { bg = c.MidGray })
     hl("DiffAdd", { fg = c.Black, bg = c.Green })
     hl("DiffChange", { fg = c.Black, bg = c.Yellow })
@@ -86,7 +97,7 @@ theme.set_highlights = function (opts)
     hl("MoreMsg", { ctermfg = 213, fg = c.Orchid })
 
     -- Statusline
-    hl("StatusLine", { fg = c.NormalFG, bg = c.StatusLineBG })
+    hl("StatusLine", { fg = c.NormalFG, bg = LightBG })
     hl("ModeMsg", { ctermfg = 15, fg = c.White })
 
     -- netrw

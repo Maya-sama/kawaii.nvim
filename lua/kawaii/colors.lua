@@ -7,14 +7,8 @@ colors.get_colors = function ()
     local config = require("kawaii.config")
 
     return {
-        None = "NONE",
-
         NormalFG = "#DFDEDF",
         NormalBG = "#211F1F",
-
-        RealBG = config.opts.transparent
-                     and "NONE"
-                     or "#211F1F",
 
         White = "#F5EFFF",
         Gray = "#C8C8C8",
@@ -39,9 +33,7 @@ colors.get_colors = function ()
         Error = "#FF5050",
         Directory = "#EDD0EF",
         String = "#8ACCD5",
-        CursorLine = "#323131",
-
-        StatusLineBG = "#303030"
+        CursorLine = "#323131"
     }
 end
 
