@@ -119,6 +119,9 @@ theme.set_highlights = function (opts)
     hl("netrwQHTopic", { fg = c.LightViolet })
     hl("netrwComment", { fg = c.MidGray })
     hl("netrwVersion", { fg = c.DarkGray })
+
+    -- tree-sitter
+    hl("@variable", { link = "Identifier" })
 end
 
 return theme
