@@ -62,6 +62,7 @@ theme.set_highlights = function (opts)
     hl("Number", { fg = c.LightViolet })
     hl("Float", { fg = c.LightViolet })
     hl("String", { fg = c.String })
+    hl("Character", { link = "String" })
 
     -- Keywords
     hl("Keyword", { fg = c.Taffy })
